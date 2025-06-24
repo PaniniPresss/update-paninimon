@@ -81,6 +81,11 @@ $mods = @(
 	"https://cdn.modrinth.com/data/lRwTUnD7/versions/U2M56SeG/rctmod-fabric-1.21.1-0.16.4-beta.jar",
 	"https://cdn.modrinth.com/data/CBfM2yw7/versions/ws0S1A3X/rctapi-fabric-1.21.1-0.13.6-beta.jar",
 	"https://cdn.modrinth.com/data/GcWjdA9I/versions/xTezyq2N/malilib-fabric-1.21-0.21.9.jar",
+ 	"https://cdn.modrinth.com/data/XP2jcAo0/versions/HroTTOh2/pastureLoot-1.0.2%2B1.21.1.jar",
+  	"https://cdn.modrinth.com/data/AufMZTuI/versions/umkXHWa8/cobblemon-pasturecollector-1.6-fabric-1.2.0.jar",
+   	"https://cdn.modrinth.com/data/5ibSyLAz/versions/Y0KUoPqY/InventorySorter-1.9.0-1.21.jar",
+    	"https://cdn.modrinth.com/data/AP8rDDLS/versions/QvoJWaYG/HMI%204.3%20-%201.21.%281%29.jar",
+     	"https://cdn.modrinth.com/data/67dS28p4/versions/OFkWcFfg/gachamachine-1.1.1.jar",
 	"https://cdn.modrinth.com/data/JygyCSA4/versions/UfoXF5yo/itemscroller-fabric-1.21-0.24.59.jar"
 )
 
@@ -95,6 +100,7 @@ $resourcePacks = @(
     @{Url="https://www.dropbox.com/scl/fi/quv2qj3a4myvuio0wvd0h/CobbleSounds-Complete-_v1.4.1.zip?rlkey=4ohj3y41b6csa6bs1ofhx5avt&st=d9a2qgda&dl=1"; Name="CobbleSounds-Complete-_v1.4.1.zip"},
 	@{Url="https://www.dropbox.com/scl/fi/m89545py2g0f78y67ijcl/1.6-Shiny-Update.zip?rlkey=9rglktpiwjgyyj4b0qb860dwg&st=6jve9ivi&dl=1"; Name="1.6 - Shiny Update.zip"},
 	@{Url="https://cdn.modrinth.com/data/odZZdRCE/versions/dBmf5bHc/AllTheMons%20x%20Mega%20Showdown%20%5Bv2.5.2%5D.zip"; Name="AllTheMons x Mega Showdown v2.5.2.zip"},
+ 	@{Url="https://cdn.modrinth.com/data/46vmrpwJ/versions/OZm5lU27/PathToLegends-1.1.0-release.zip"; Name="PathToLegends-1.1.0-release.zip"},
 	@{Url="https://www.dropbox.com/scl/fi/4d2qx755jclbuvxeb4nha/XaerosCobblemon-3.0.2_stars-1.6.1.zip?rlkey=r6r5q7p52mpk9tsn8dtkzghtd&st=dnod50z3&dl=1"; Name="XaerosCobblemon-3.0.2_stars+1.6.1.zip"}
 )
 
