@@ -88,6 +88,7 @@ $mods = @(
      	"https://cdn.modrinth.com/data/67dS28p4/versions/OFkWcFfg/gachamachine-1.1.1.jar",
 	"https://cdn.modrinth.com/data/fPetb5Kh/versions/9W2MUsnU/NaturesCompass-1.21.1-2.2.7-fabric.jar",
 	"https://cdn.modrinth.com/data/t1VgucWo/versions/IhWfYqZC/chunkloaders-1.2.8b-fabric-mc1.21.jar",
+	"https://cdn.modrinth.com/data/rOUBggPv/versions/XMcUxulR/supermartijn642corelib-1.1.18a-fabric-mc1.21.jar",
 	"https://cdn.modrinth.com/data/JygyCSA4/versions/UfoXF5yo/itemscroller-fabric-1.21-0.24.59.jar"
 )
 
