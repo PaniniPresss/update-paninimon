@@ -91,6 +91,7 @@ $mods = @(
 	"https://cdn.modrinth.com/data/rOUBggPv/versions/XMcUxulR/supermartijn642corelib-1.1.18a-fabric-mc1.21.jar",
  	"https://cdn.modrinth.com/data/VSNURh3q/versions/oXr69pco/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.320.jar",
   	"https://cdn.modrinth.com/data/Ps1zyz6x/versions/Oh80nTJ5/ScalableLux-0.1.0%2Bfabric.26c6e72-all.jar",
+	"https://cdn.modrinth.com/data/2rL16t1O/versions/boM0THhL/Enhanced-Celestials-Fabric-6.0.2.0.jar",
 	"https://cdn.modrinth.com/data/JygyCSA4/versions/UfoXF5yo/itemscroller-fabric-1.21-0.24.59.jar"
 )
 
