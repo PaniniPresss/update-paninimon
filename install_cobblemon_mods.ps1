@@ -15,7 +15,7 @@ $minecraftPath = Join-Path $appdata ".minecraft"
 $modsPath = Join-Path $minecraftPath "mods"
 $resourcePacksPath = Join-Path $minecraftPath "resourcepacks"
 
-# List of mods to download
+# List of mods to verify and download if missing (replace with your list)
 $mods = @(
     "https://cdn.modrinth.com/data/9NM0dXub/versions/g0SNjiMq/AdvancementPlaques-1.21.1-fabric-1.6.8.jar",
     "https://cdn.modrinth.com/data/EsAfCjCV/versions/b5ZiCjAr/appleskin-fabric-mc1.21-3.0.6.jar",
@@ -71,30 +71,40 @@ $mods = @(
     "https://cdn.modrinth.com/data/1eAoo2KR/versions/kVxtKPT4/yet_another_config_lib_v3-3.7.1%2B1.21.1-fabric.jar",
     "https://cdn.modrinth.com/data/w7ThoJFB/versions/BTXkmTHl/Zoomify-2.14.4%2B1.21.1.jar",
     "https://cdn.modrinth.com/data/yFqR0DNc/versions/2fmwJrAr/SimpleTMs-fabric-2.1.2.jar",
-	"https://cdn.modrinth.com/data/75Ons9AY/versions/oFr92fLC/cobbleboom-fabric-1.4.jar",
-	"https://cdn.modrinth.com/data/TrneBt3p/versions/QrenW0p3/livelierpokemon-fabric-2.0.4%2B1.21.1.jar",
-	"https://cdn.modrinth.com/data/ouNrBQtq/versions/zBk8Jjya/sophisticatedbackpacks-1.21.1-3.23.4.2.103.jar",
-	"https://cdn.modrinth.com/data/9jxwkYQL/versions/qXLdXcsD/sophisticatedcore-1.21.1-1.2.9.14.154.jar",
-	"https://cdn.modrinth.com/data/dwxBClup/versions/WQEhxo44/cobblemon-fixedstarterivs-1.6-fabric-1.0.0.jar",
-	"https://cdn.modrinth.com/data/NPCfuUI4/versions/YAT9TObm/cobblemonintegrations-fabric-1.21.1-1.1.2.jar",
-	"https://cdn.modrinth.com/data/MqcGBDhG/versions/NzRyqZFk/CobblemonMoveInspector-fabric-1.2.0.jar",
-	"https://cdn.modrinth.com/data/lRwTUnD7/versions/U2M56SeG/rctmod-fabric-1.21.1-0.16.4-beta.jar",
-	"https://cdn.modrinth.com/data/CBfM2yw7/versions/ws0S1A3X/rctapi-fabric-1.21.1-0.13.6-beta.jar",
-	"https://cdn.modrinth.com/data/GcWjdA9I/versions/xTezyq2N/malilib-fabric-1.21-0.21.9.jar",
- 	"https://cdn.modrinth.com/data/XP2jcAo0/versions/HroTTOh2/pastureLoot-1.0.2%2B1.21.1.jar",
-  	"https://cdn.modrinth.com/data/AufMZTuI/versions/umkXHWa8/cobblemon-pasturecollector-1.6-fabric-1.2.0.jar",
-   	"https://cdn.modrinth.com/data/5ibSyLAz/versions/Y0KUoPqY/InventorySorter-1.9.0-1.21.jar",
-    	"https://cdn.modrinth.com/data/AP8rDDLS/versions/QvoJWaYG/HMI%204.3%20-%201.21.%281%29.jar",
-     	"https://cdn.modrinth.com/data/67dS28p4/versions/OFkWcFfg/gachamachine-1.1.1.jar",
-	"https://cdn.modrinth.com/data/fPetb5Kh/versions/9W2MUsnU/NaturesCompass-1.21.1-2.2.7-fabric.jar",
-	"https://cdn.modrinth.com/data/t1VgucWo/versions/IhWfYqZC/chunkloaders-1.2.8b-fabric-mc1.21.jar",
-	"https://cdn.modrinth.com/data/rOUBggPv/versions/XMcUxulR/supermartijn642corelib-1.1.18a-fabric-mc1.21.jar",
- 	"https://cdn.modrinth.com/data/VSNURh3q/versions/oXr69pco/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.320.jar",
-  	"https://cdn.modrinth.com/data/Ps1zyz6x/versions/Oh80nTJ5/ScalableLux-0.1.0%2Bfabric.26c6e72-all.jar",
-	"https://cdn.modrinth.com/data/JygyCSA4/versions/UfoXF5yo/itemscroller-fabric-1.21-0.24.59.jar"
+    "https://cdn.modrinth.com/data/75Ons9AY/versions/oFr92fLC/cobbleboom-fabric-1.4.jar",
+    "https://cdn.modrinth.com/data/TrneBt3p/versions/QrenW0p3/livelierpokemon-fabric-2.0.4%2B1.21.1.jar",
+    "https://cdn.modrinth.com/data/ouNrBQtq/versions/zBk8Jjya/sophisticatedbackpacks-1.21.1-3.23.4.2.103.jar",
+    "https://cdn.modrinth.com/data/9jxwkYQL/versions/qXLdXcsD/sophisticatedcore-1.21.1-1.2.9.14.154.jar",
+    "https://cdn.modrinth.com/data/dwxBClup/versions/WQEhxo44/cobblemon-fixedstarterivs-1.6-fabric-1.0.0.jar",
+    "https://cdn.modrinth.com/data/NPCfuUI4/versions/YAT9TObm/cobblemonintegrations-fabric-1.21.1-1.1.2.jar",
+    "https://cdn.modrinth.com/data/MqcGBDhG/versions/NzRyqZFk/CobblemonMoveInspector-fabric-1.2.0.jar",
+    "https://cdn.modrinth.com/data/lRwTUnD7/versions/U2M56SeG/rctmod-fabric-1.21.1-0.16.4-beta.jar",
+    "https://cdn.modrinth.com/data/CBfM2yw7/versions/ws0S1A3X/rctapi-fabric-1.21.1-0.13.6-beta.jar",
+    "https://cdn.modrinth.com/data/GcWjdA9I/versions/xTezyq2N/malilib-fabric-1.21-0.21.9.jar",
+    "https://cdn.modrinth.com/data/XP2jcAo0/versions/HroTTOh2/pastureLoot-1.0.2%2B1.21.1.jar",
+    "https://cdn.modrinth.com/data/AufMZTuI/versions/umkXHWa8/cobblemon-pasturecollector-1.6-fabric-1.2.0.jar",
+    "https://cdn.modrinth.com/data/5ibSyLAz/versions/Y0KUoPqY/InventorySorter-1.9.0-1.21.jar",
+    "https://cdn.modrinth.com/data/AP8rDDLS/versions/QvoJWaYG/HMI%204.3%20-%201.21.%281%29.jar",
+    "https://cdn.modrinth.com/data/67dS28p4/versions/OFkWcFfg/gachamachine-1.1.1.jar",
+    "https://cdn.modrinth.com/data/fPetb5Kh/versions/9W2MUsnU/NaturesCompass-1.21.1-2.2.7-fabric.jar",
+    "https://cdn.modrinth.com/data/t1VgucWo/versions/IhWfYqZC/chunkloaders-1.2.8b-fabric-mc1.21.jar",
+    "https://cdn.modrinth.com/data/rOUBggPv/versions/XMcUxulR/supermartijn642corelib-1.1.18a-fabric-mc1.21.jar",
+    "https://cdn.modrinth.com/data/VSNURh3q/versions/oXr69pco/c2me-fabric-mc1.21.1-0.3.0%2Balpha.0.320.jar",
+    "https://cdn.modrinth.com/data/Ps1zyz6x/versions/Oh80nTJ5/ScalableLux-0.1.0%2Bfabric.26c6e72-all.jar",
+    "https://cdn.modrinth.com/data/JygyCSA4/versions/UfoXF5yo/itemscroller-fabric-1.21-0.24.59.jar",
+    "https://cdn.modrinth.com/data/wh0wnzrT/versions/9DQtuwLO/cobblemon-unchained-1.6-fabric-1.2.1.jar",
+    "https://cdn.modrinth.com/data/BAscRYKm/versions/6h2mVZcb/chipped-fabric-1.21.1-4.0.2.jar",
+    "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar",
+    "https://cdn.modrinth.com/data/rj8uLYP4/versions/loRaF5XK/cobblemon-counter-1.6-fabric-1.5.0.jar",
+    "https://cdn.modrinth.com/data/m6RyHSbV/versions/9JhIuvGv/LegendaryMonuments-6.0.jar",
+    "https://cdn.modrinth.com/data/ni4SrKmq/versions/3MLcSYh8/chesttracker-2.6.7%2B1.21.1.jar"
 )
 
-# List of resource packs to download
+# List of mods to remove if present (replace with your list)
+$modsToRemove = @(
+)
+
+# List of resource packs to verify and download if missing (replace with your list)
 $resourcePacks = @(
     @{Url="https://www.dropbox.com/scl/fi/tbdkt84e38h2x4zbeewn6/CobbledGacha-V.1.1-Resourcepack.zip?rlkey=ms0jhymm4olpsd8oknvwdl8k1&st=aok5ef0n&dl=1"; Name="CobbledGacha-V.1.1-Resourcepack.zip"},
     @{Url="https://www.dropbox.com/scl/fi/huvuoh22nicqzhtv5rk9w/CobbleFolk-Skin-Pack-for-1.6.zip?rlkey=eaggbpeqmyw5z1doo5pud60le&st=ts04xegn&dl=1"; Name="CobbleFolk-Skin-Pack-for-1.6.zip"},
@@ -103,10 +113,15 @@ $resourcePacks = @(
     @{Url="https://www.dropbox.com/scl/fi/gpholkcs245q2arjrh9v3/Cobblemon-Interface-v1.4.1.zip?rlkey=n5i4or1wfd11tn8d1u83hcpl5&st=452taz76&dl=1"; Name="Cobblemon-Interface-v1.4.1.zip"},
     @{Url="https://www.dropbox.com/scl/fi/azr95oq0bmhxs8wk3l7vj/SwapBallsReborn-1.2.zip?rlkey=u3p9ptvs6hx4q8v1fqpe1kc4d&st=vc3hw9la&dl=1"; Name="SwapBallsReborn-1.2.zip"},
     @{Url="https://www.dropbox.com/scl/fi/quv2qj3a4myvuio0wvd0h/CobbleSounds-Complete-_v1.4.1.zip?rlkey=4ohj3y41b6csa6bs1ofhx5avt&st=d9a2qgda&dl=1"; Name="CobbleSounds-Complete-_v1.4.1.zip"},
-	@{Url="https://www.dropbox.com/scl/fi/m89545py2g0f78y67ijcl/1.6-Shiny-Update.zip?rlkey=9rglktpiwjgyyj4b0qb860dwg&st=6jve9ivi&dl=1"; Name="1.6 - Shiny Update.zip"},
-	@{Url="https://cdn.modrinth.com/data/odZZdRCE/versions/dBmf5bHc/AllTheMons%20x%20Mega%20Showdown%20%5Bv2.5.2%5D.zip"; Name="AllTheMons x Mega Showdown v2.5.2.zip"},
- 	@{Url="https://cdn.modrinth.com/data/46vmrpwJ/versions/OZm5lU27/PathToLegends-1.1.0-release.zip"; Name="PathToLegends-1.1.0-release.zip"},
-	@{Url="https://www.dropbox.com/scl/fi/4d2qx755jclbuvxeb4nha/XaerosCobblemon-3.0.2_stars-1.6.1.zip?rlkey=r6r5q7p52mpk9tsn8dtkzghtd&st=dnod50z3&dl=1"; Name="XaerosCobblemon-3.0.2_stars+1.6.1.zip"}
+    @{Url="https://www.dropbox.com/scl/fi/m89545py2g0f78y67ijcl/1.6-Shiny-Update.zip?rlkey=9rglktpiwjgyyj4b0qb860dwg&st=6jve9ivi&dl=1"; Name="1.6 - Shiny Update.zip"},
+    @{Url="https://cdn.modrinth.com/data/odZZdRCE/versions/dBmf5bHc/AllTheMons%20x%20Mega%20Showdown%20%5Bv2.5.2%5D.zip"; Name="AllTheMons x Mega Showdown v2.5.2.zip"},
+    @{Url="https://cdn.modrinth.com/data/46vmrpwJ/versions/OZm5lU27/PathToLegends-1.1.0-release.zip"; Name="PathToLegends-1.1.0-release.zip"},
+    @{Url="https://www.dropbox.com/scl/fi/4d2qx755jclbuvxeb4nha/XaerosCobblemon-3.0.2_stars-1.6.1.zip?rlkey=r6r5q7p52mpk9tsn8dtkzghtd&st=dnod50z3&dl=1"; Name="XaerosCobblemon-3.0.2_stars+1.6.1.zip"}
+)
+
+# List of resource packs to remove if present (replace with your list)
+$resourcePacksToRemove = @(
+    # Add objects for resource packs to remove, e.g., @{Url="https://www.dropbox.com/..."; Name="OldResourcePack.zip"}
 )
 
 # Function to decode URL-encoded filename
@@ -147,20 +162,41 @@ function Download-File {
 # Handle mods folder
 try {
     Write-Host "Checking for mods folder at $modsPath..." -ForegroundColor Yellow
-    if (Test-Path $modsPath) {
-        Write-Host "Removing existing mods folder..." -ForegroundColor Yellow
-        Remove-Item -Path $modsPath -Recurse -Force -ErrorAction Stop
-        Write-Host "Existing mods folder removed" -ForegroundColor Green
+    if (-not (Test-Path $modsPath)) {
+        Write-Host "Creating mods folder..." -ForegroundColor Yellow
+        New-Item -Path $modsPath -ItemType Directory -Force | Out-Null
+        Write-Host "Created mods folder" -ForegroundColor Green
     }
-    New-Item -Path $modsPath -ItemType Directory -Force | Out-Null
-    Write-Host "Created new mods folder" -ForegroundColor Green
+    else {
+        Write-Host "Mods folder already exists" -ForegroundColor Green
+    }
 
-    # Download mods
+    # Remove unwanted mods
+    foreach ($mod in $modsToRemove) {
+        $fileName = Get-DecodedFilename -url $mod
+        $filePath = Join-Path $modsPath $fileName
+        if (Test-Path $filePath) {
+            Write-Host "Removing unwanted mod $fileName..." -ForegroundColor Yellow
+            Remove-Item -Path $filePath -Force -ErrorAction Stop
+            Write-Host "Removed $fileName" -ForegroundColor Green
+        }
+        else {
+            Write-Host "Mod $fileName not found in mods folder, no removal needed" -ForegroundColor Green
+        }
+    }
+
+    # Check and download mods
     foreach ($mod in $mods) {
         $fileName = Get-DecodedFilename -url $mod
         $outputPath = Join-Path $modsPath $fileName
-        if (-not (Download-File -url $mod -outputPath $outputPath)) {
-            Write-Host "Failed to download mod $fileName. Continuing with next mod..." -ForegroundColor Red
+        if (Test-Path $outputPath) {
+            Write-Host "Mod $fileName already exists, skipping download..." -ForegroundColor Green
+        }
+        else {
+            Write-Host "Mod $fileName not found, downloading..." -ForegroundColor Yellow
+            if (-not (Download-File -url $mod -outputPath $outputPath)) {
+                Write-Host "Failed to download mod $fileName. Continuing with next mod..." -ForegroundColor Red
+            }
         }
     }
 }
@@ -174,20 +210,41 @@ catch {
 # Handle resource packs folder
 try {
     Write-Host "Checking for resource packs folder at $resourcePacksPath..." -ForegroundColor Yellow
-    if (Test-Path $resourcePacksPath) {
-        Write-Host "Removing existing resource packs folder..." -ForegroundColor Yellow
-        Remove-Item -Path $resourcePacksPath -Recurse -Force -ErrorAction Stop
-        Write-Host "Existing resource packs folder removed" -ForegroundColor Green
+    if (-not (Test-Path $resourcePacksPath)) {
+        Write-Host "Creating resource packs folder..." -ForegroundColor Yellow
+        New-Item -Path $resourcePacksPath -ItemType Directory -Force | Out-Null
+        Write-Host "Created resource packs folder" -ForegroundColor Green
     }
-    New-Item -Path $resourcePacksPath -ItemType Directory -Force | Out-Null
-    Write-Host "Created new resource packs folder" -ForegroundColor Green
+    else {
+        Write-Host "Resource packs folder already exists" -ForegroundColor Green
+    }
 
-    # Download resource packs
+    # Remove unwanted resource packs
+    foreach ($pack in $resourcePacksToRemove) {
+        $fileName = $pack.Name
+        $filePath = Join-Path $resourcePacksPath $fileName
+        if (Test-Path $filePath) {
+            Write-Host "Removing unwanted resource pack $fileName..." -ForegroundColor Yellow
+            Remove-Item -Path $filePath -Force -ErrorAction Stop
+            Write-Host "Removed $fileName" -ForegroundColor Green
+        }
+        else {
+            Write-Host "Resource pack $fileName not found in resource packs folder, no removal needed" -ForegroundColor Green
+        }
+    }
+
+    # Check and download resource packs
     foreach ($pack in $resourcePacks) {
         $fileName = $pack.Name
         $outputPath = Join-Path $resourcePacksPath $fileName
-        if (-not (Download-File -url $pack.Url -outputPath $outputPath)) {
-            Write-Host "Failed to download resource pack $fileName. Continuing with next pack..." -ForegroundColor Red
+        if (Test-Path $outputPath) {
+            Write-Host "Resource pack $fileName already exists, skipping download..." -ForegroundColor Green
+        }
+        else {
+            Write-Host "Resource pack $fileName not found, downloading..." -ForegroundColor Yellow
+            if (-not (Download-File -url $pack.Url -outputPath $outputPath)) {
+                Write-Host "Failed to download resource pack $fileName. Continuing with next pack..." -ForegroundColor Red
+            }
         }
     }
 }
