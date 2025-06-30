@@ -34,7 +34,6 @@ $mods = @(
     "https://cdn.modrinth.com/data/u8TYP2M6/versions/uXlfWFQv/CobblemonRepel-1.6-1.2.jar",
     "https://cdn.modrinth.com/data/bI8Nt3uA/versions/aB3cwrFJ/cobblenav-fabric-2.2.3.jar",
     "https://cdn.modrinth.com/data/vXREhDPP/versions/SvjVoDMg/cobbleride-fabric-0.3.2%2B1.21.1.jar",
-    "https://cdn.modrinth.com/data/ItmVb4zY/versions/WWub8t6L/Cobbreeding-fabric-1.9.0.jar",
     "https://cdn.modrinth.com/data/1IjD5062/versions/kSPJ4hQv/continuity-3.0.0%2B1.21.jar",
     "https://cdn.modrinth.com/data/ziOp6EO8/versions/kXccSi03/Corgilib-Fabric-1.21.1-5.0.0.4.jar",
     "https://cdn.modrinth.com/data/z2XEADmE/versions/CpSbR8Mk/Data_Anchor-fabric-1.21.1-2.0.0.12.jar",
@@ -101,11 +100,13 @@ $mods = @(
     "https://www.curseforge.com/api/v1/mods/1296055/files/6704961/download",
     "https://cdn.modrinth.com/data/pSd78c83/versions/3kWR7S4Y/cobblemon-unimplementeditems-1.6-fabric-1.1.0.jar",
     "https://cdn.modrinth.com/data/yBW8D80W/versions/DnQux4Yj/lambdynamiclights-4.1.3%2B1.21.1.jar",
-    "https://cdn.modrinth.com/data/bDx3sk7a/versions/3walORft/show-held-items-0.2.3.jar"
+    "https://cdn.modrinth.com/data/bDx3sk7a/versions/3walORft/show-held-items-0.2.3.jar",
+    "https://cdn.modrinth.com/data/ItmVb4zY/versions/ar2cejBV/Cobbreeding-fabric-1.9.1.jar"
 )
 
 # List of mods to remove if present (replace with your list)
 $modsToRemove = @(
+    "https://cdn.modrinth.com/data/ItmVb4zY/versions/WWub8t6L/Cobbreeding-fabric-1.9.0.jar"
 )
 
 # List of resource packs to verify and download if missing (replace with your list)
