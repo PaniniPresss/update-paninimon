@@ -101,7 +101,8 @@ $mods = @(
     "https://cdn.modrinth.com/data/pSd78c83/versions/3kWR7S4Y/cobblemon-unimplementeditems-1.6-fabric-1.1.0.jar",
     "https://cdn.modrinth.com/data/yBW8D80W/versions/DnQux4Yj/lambdynamiclights-4.1.3%2B1.21.1.jar",
     "https://cdn.modrinth.com/data/bDx3sk7a/versions/3walORft/show-held-items-0.2.3.jar",
-    "https://cdn.modrinth.com/data/ItmVb4zY/versions/ar2cejBV/Cobbreeding-fabric-1.9.1.jar"
+    "https://cdn.modrinth.com/data/ItmVb4zY/versions/ar2cejBV/Cobbreeding-fabric-1.9.1.jar",
+    "https://cdn.modrinth.com/data/VoNSGQHx/versions/cxh6HLNj/EasyItemList-0.1.4-1.20.5.jar"
 )
 
 # List of mods to remove if present (replace with your list)
