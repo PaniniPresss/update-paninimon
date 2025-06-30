@@ -120,14 +120,14 @@ $resourcePacks = @(
     @{Url="https://www.dropbox.com/scl/fi/azr95oq0bmhxs8wk3l7vj/SwapBallsReborn-1.2.zip?rlkey=u3p9ptvs6hx4q8v1fqpe1kc4d&st=vc3hw9la&dl=1"; Name="SwapBallsReborn-1.2.zip"},
     @{Url="https://www.dropbox.com/scl/fi/quv2qj3a4myvuio0wvd0h/CobbleSounds-Complete-_v1.4.1.zip?rlkey=4ohj3y41b6csa6bs1ofhx5avt&st=d9a2qgda&dl=1"; Name="CobbleSounds-Complete-_v1.4.1.zip"},
     @{Url="https://www.dropbox.com/scl/fi/m89545py2g0f78y67ijcl/1.6-Shiny-Update.zip?rlkey=9rglktpiwjgyyj4b0qb860dwg&st=6jve9ivi&dl=1"; Name="1.6 - Shiny Update.zip"},
-    @{Url="https://cdn.modrinth.com/data/odZZdRCE/versions/dBmf5bHc/AllTheMons%20x%20Mega%20Showdown%20%5Bv2.5.2%5D.zip"; Name="AllTheMons x Mega Showdown v2.5.2.zip"},
+    @{Url="https://www.dropbox.com/scl/fi/qgqwep73g82h8zusb9sap/AllTheMons-x-Mega-Showdown-v2.6.2.zip?rlkey=cnav8jr2vlw5khlxuzn9gzwg6&st=3fl7e6ar&dl=1"; Name="AllTheMons x Mega Showdown v2.6.2.zip"},
     @{Url="https://cdn.modrinth.com/data/46vmrpwJ/versions/OZm5lU27/PathToLegends-1.1.0-release.zip"; Name="PathToLegends-1.1.0-release.zip"},
     @{Url="https://www.dropbox.com/scl/fi/4d2qx755jclbuvxeb4nha/XaerosCobblemon-3.0.2_stars-1.6.1.zip?rlkey=r6r5q7p52mpk9tsn8dtkzghtd&st=dnod50z3&dl=1"; Name="XaerosCobblemon-3.0.2_stars+1.6.1.zip"}
 )
 
 # List of resource packs to remove if present (replace with your list)
 $resourcePacksToRemove = @(
-    # Add objects for resource packs to remove, e.g., @{Url="https://www.dropbox.com/..."; Name="OldResourcePack.zip"}
+    @{Url="https://cdn.modrinth.com/data/odZZdRCE/versions/dBmf5bHc/AllTheMons%20x%20Mega%20Showdown%20%5Bv2.5.2%5D.zip"; Name="AllTheMons x Mega Showdown v2.5.2.zip"}
 )
 
 # Function to decode URL-encoded filename
