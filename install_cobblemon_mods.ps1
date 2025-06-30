@@ -97,7 +97,11 @@ $mods = @(
     "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar",
     "https://cdn.modrinth.com/data/rj8uLYP4/versions/loRaF5XK/cobblemon-counter-1.6-fabric-1.5.0.jar",
     "https://cdn.modrinth.com/data/m6RyHSbV/versions/9JhIuvGv/LegendaryMonuments-6.0.jar",
-    "https://cdn.modrinth.com/data/ni4SrKmq/versions/3MLcSYh8/chesttracker-2.6.7%2B1.21.1.jar"
+    "https://cdn.modrinth.com/data/ni4SrKmq/versions/3MLcSYh8/chesttracker-2.6.7%2B1.21.1.jar",
+    "https://www.curseforge.com/api/v1/mods/1296055/files/6704961/download",
+    "https://cdn.modrinth.com/data/pSd78c83/versions/3kWR7S4Y/cobblemon-unimplementeditems-1.6-fabric-1.1.0.jar",
+    "https://cdn.modrinth.com/data/yBW8D80W/versions/DnQux4Yj/lambdynamiclights-4.1.3%2B1.21.1.jar",
+    "https://cdn.modrinth.com/data/bDx3sk7a/versions/3walORft/show-held-items-0.2.3.jar"
 )
 
 # List of mods to remove if present (replace with your list)
