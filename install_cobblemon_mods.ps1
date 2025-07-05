@@ -75,7 +75,7 @@ $mods = @(
     "https://cdn.modrinth.com/data/ouNrBQtq/versions/zBk8Jjya/sophisticatedbackpacks-1.21.1-3.23.4.2.103.jar",
     "https://cdn.modrinth.com/data/9jxwkYQL/versions/qXLdXcsD/sophisticatedcore-1.21.1-1.2.9.14.154.jar",
     "https://cdn.modrinth.com/data/dwxBClup/versions/WQEhxo44/cobblemon-fixedstarterivs-1.6-fabric-1.0.0.jar",
-    "https://cdn.modrinth.com/data/NPCfuUI4/versions/YAT9TObm/cobblemonintegrations-fabric-1.21.1-1.1.2.jar",
+    "https://cdn.modrinth.com/data/NPCfuUI4/versions/y3K09e2V/cobblemonintegrations-fabric-1.21.1-1.1.3.jar",
     "https://cdn.modrinth.com/data/MqcGBDhG/versions/NzRyqZFk/CobblemonMoveInspector-fabric-1.2.0.jar",
     "https://cdn.modrinth.com/data/lRwTUnD7/versions/U2M56SeG/rctmod-fabric-1.21.1-0.16.4-beta.jar",
     "https://cdn.modrinth.com/data/CBfM2yw7/versions/ws0S1A3X/rctapi-fabric-1.21.1-0.13.6-beta.jar",
@@ -102,12 +102,14 @@ $mods = @(
     "https://cdn.modrinth.com/data/yBW8D80W/versions/DnQux4Yj/lambdynamiclights-4.1.3%2B1.21.1.jar",
     "https://cdn.modrinth.com/data/bDx3sk7a/versions/3walORft/show-held-items-0.2.3.jar",
     "https://cdn.modrinth.com/data/ItmVb4zY/versions/ar2cejBV/Cobbreeding-fabric-1.9.1.jar",
-    "https://cdn.modrinth.com/data/VoNSGQHx/versions/cxh6HLNj/EasyItemList-0.1.4-1.20.5.jar"
+    "https://cdn.modrinth.com/data/VoNSGQHx/versions/cxh6HLNj/EasyItemList-0.1.4-1.20.5.jar",
+    "https://cdn.modrinth.com/data/2rL16t1O/versions/boM0THhL/Enhanced-Celestials-Fabric-6.0.2.0.jar"
 )
 
 # List of mods to remove if present (replace with your list)
 $modsToRemove = @(
-    "https://cdn.modrinth.com/data/ItmVb4zY/versions/WWub8t6L/Cobbreeding-fabric-1.9.0.jar"
+    "https://cdn.modrinth.com/data/ItmVb4zY/versions/WWub8t6L/Cobbreeding-fabric-1.9.0.jar",
+    "https://cdn.modrinth.com/data/NPCfuUI4/versions/YAT9TObm/cobblemonintegrations-fabric-1.21.1-1.1.2.jar"
 )
 
 # List of resource packs to verify and download if missing (replace with your list)
