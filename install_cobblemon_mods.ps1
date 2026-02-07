@@ -1,3 +1,8 @@
+[CmdletBinding()]
+param(
+    [string]$InstanceName = "Panini-Academy-2.0"
+)
+
 # Minecraft Mods and Resource Packs Installer
 Write-Host "Starting Minecraft mods and resource packs installation..." -ForegroundColor Green
 
@@ -10,11 +15,19 @@ catch {
 }
 
 # Define paths
-$instanceName = "Panini-Academy-2.0"
 $prismAppData = Join-Path ([Environment]::GetFolderPath("ApplicationData")) "PrismLauncher"
 $minecraftPath = Join-Path $prismAppData "instances" $instanceName "minecraft"
+
+if (-not (Test-Path $minecraftPath)) {
+    Write-Host "Error: Instance '$InstanceName' not found at $minecraftPath" -ForegroundColor Red
+    Write-Host "Press any key to exit..." -ForegroundColor Yellow
+    $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+    exit
+}
+
 $modsPath = Join-Path $minecraftPath "mods"
 $resourcePacksPath = Join-Path $minecraftPath "resourcepacks"
+
 
 # List of mods to verify and download if missing (replace with your list)
 $mods = @(
