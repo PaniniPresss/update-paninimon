@@ -18,7 +18,7 @@ catch {
 
 # ── Define paths ─────────────────────────────────────────────────────────────
 $prismAppData     = Join-Path ([Environment]::GetFolderPath("ApplicationData")) "PrismLauncher"
-$minecraftPath    = Join-Path $prismAppData "instances" $InstanceName "minecraft"
+$minecraftPath = Join-Path $prismAppData "instances" | Join-Path -ChildPath $InstanceName | Join-Path -ChildPath "minecraft"
 $modsPath         = Join-Path $minecraftPath "mods"
 $resourcePacksPath = Join-Path $minecraftPath "resourcepacks"
 
