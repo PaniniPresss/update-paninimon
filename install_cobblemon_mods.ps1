@@ -35,7 +35,8 @@ if (-not (Test-Path $minecraftPath)) {
 # ── Your mod & resource pack lists ──────────────────────────────────────────
 $mods = @(
     "https://cdn.modrinth.com/data/9jxwkYQL/versions/ZLVrtF0Q/sophisticatedcore-1.21.1-1.2.9.21.168.jar",
-    "https://cdn.modrinth.com/data/ouNrBQtq/versions/nHhuPdda/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar"
+    "https://cdn.modrinth.com/data/ouNrBQtq/versions/nHhuPdda/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar".
+    "https://www.dropbox.com/scl/fi/lcoqv22fml5zmr2s23uzn/cobbleemi-fabric-1.0.3-for-cobblemon-1.7.1.jar?rlkey=43vi615octaw6q2qrh74to1uk&st=0pffxbm7&dl=1"
     # Add more mod URLs here
 )
 
