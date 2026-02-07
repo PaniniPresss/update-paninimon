@@ -18,7 +18,8 @@ $resourcePacksPath = Join-Path $minecraftPath "resourcepacks"
 
 # List of mods to verify and download if missing (replace with your list)
 $mods = @(
-    
+    "https://cdn.modrinth.com/data/9jxwkYQL/versions/ZLVrtF0Q/sophisticatedcore-1.21.1-1.2.9.21.168.jar",
+    "https://cdn.modrinth.com/data/ouNrBQtq/versions/nHhuPdda/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar"
 )
 
 # List of mods to remove if present (replace with your list)
