@@ -36,7 +36,7 @@ if (-not (Test-Path $minecraftPath)) {
 $mods = @(
     "https://cdn.modrinth.com/data/9jxwkYQL/versions/ZLVrtF0Q/sophisticatedcore-1.21.1-1.2.9.21.168.jar",
     "https://cdn.modrinth.com/data/ouNrBQtq/versions/nHhuPdda/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
-    "https://www.curseforge.com/minecraft/mc-mods/cobblemon-emi/download/7384388"
+    "https://cdn.modrinth.com/data/GA4DHzBS/versions/vUWSQ7V8/cobbleemi-fabric-1.0.3-for-cobblemon-1.7.1.jar"
     # Add more mod URLs here
 )
 
