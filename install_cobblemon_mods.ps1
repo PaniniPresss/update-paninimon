@@ -36,13 +36,15 @@ if (-not (Test-Path $minecraftPath)) {
 $mods = @(
     "https://cdn.modrinth.com/data/9jxwkYQL/versions/ZLVrtF0Q/sophisticatedcore-1.21.1-1.2.9.21.168.jar",
     "https://cdn.modrinth.com/data/ouNrBQtq/versions/nHhuPdda/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
-    "https://cdn.modrinth.com/data/GA4DHzBS/versions/vUWSQ7V8/cobbleemi-fabric-1.0.3-for-cobblemon-1.7.1.jar"
+    "https://cdn.modrinth.com/data/GA4DHzBS/versions/vUWSQ7V8/cobbleemi-fabric-1.0.3-for-cobblemon-1.7.1.jar",
+    "https://cdn.modrinth.com/data/CaOWby9K/versions/eg83qtSQ/MythsAndLegends-fabric-1.9.0.jar"
     # Add more mod URLs here
 )
 
 $modsToRemove = @(
     # "unwanted-mod.jar",
     # "another-bad-mod.jar"
+    "academy-mc1.21.1-v2.0.0+build.514-fabric.jar"
 )
 
 $resourcePacks = @(
