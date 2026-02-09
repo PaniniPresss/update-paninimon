@@ -44,7 +44,8 @@ $mods = @(
 $modsToRemove = @(
     # "unwanted-mod.jar",
     # "another-bad-mod.jar"
-    "academy-mc1.21.1-v2.0.0+build.514-fabric.jar"
+    "academy-mc1.21.1-v2.0.0+build.514-fabric.jar",
+    "itemzoomer-1.1.0-1.21.1"
 )
 
 $resourcePacks = @(
