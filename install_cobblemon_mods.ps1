@@ -54,7 +54,7 @@ $modsToRemove = @(
     "academy-mc1.21.1-v2.0.0+build.514-fabric.jar",
     "https://cdn.modrinth.com/data/gRy0el9F/versions/VQn2x2jT/cobblemon-field-moves-1.6-fabric-1.1.0.jar",
     "itemzoomer-1.1.0-1.21.1",
-    "https://cdn.modrinth.com/data/GA4DHzBS/versions/vUWSQ7V8/cobbleemi-fabric-1.0.3-for-cobblemon-1.7.1.jar",
+    "https://cdn.modrinth.com/data/GA4DHzBS/versions/vUWSQ7V8/cobbleemi-fabric-1.0.3-for-cobblemon-1.7.1.jar"
 )
 
 $resourcePacks = @(
