@@ -41,13 +41,10 @@ $mods = @(
     "https://cdn.modrinth.com/data/MqcGBDhG/versions/s0MVfFey/CobblemonMoveInspector-fabric-1.3.0.jar",
     "https://cdn.modrinth.com/data/qekxLrOP/versions/KlaDUPoQ/cobblemon-spawning-rei-fabric-1.18.2.jar",
     "https://cdn.modrinth.com/data/cTdIg5HZ/versions/GMCU6H2q/fightorflight-fabric-0.10.6.jar",
-    "https://cdn.modrinth.com/data/qGZxwa3O/versions/la3INZCr/%21Doctors%20Speed%20Boosts%205.0%20balanced.zip",
     "https://cdn.modrinth.com/data/9C9Wp8Rw/versions/vjtbxo95/berbers-stamina-tweaks-1.1.jar",
     "https://cdn.modrinth.com/data/i3XVG2gn/versions/A8T1V7uo/cobbleworkers-fabric-1.8.0%2B1.7.0.jar",
-    "https://cdn.modrinth.com/data/49cNEVjn/versions/pmWV3g7p/lost_lore-fabric-2.0.jar",
     "https://cdn.modrinth.com/data/XP2jcAo0/versions/MYJtblOM/pastureLoot-1.0.5%2B1.21.1.jar",
-    "https://cdn.modrinth.com/data/t1VgucWo/versions/gC8IvJwh/chunkloaders-1.2.9-fabric-mc1.21.1.jar",
-    "https://cdn.modrinth.com/data/SszvX85I/versions/2KGeHu4j/mega_showdown-fabric-1.6.10%2B1.7.3%2B1.21.1.jar"
+    "https://cdn.modrinth.com/data/t1VgucWo/versions/gC8IvJwh/chunkloaders-1.2.9-fabric-mc1.21.1.jar"
     # Add more mod URLs here
 )
 
@@ -58,7 +55,6 @@ $modsToRemove = @(
     "https://cdn.modrinth.com/data/gRy0el9F/versions/VQn2x2jT/cobblemon-field-moves-1.6-fabric-1.1.0.jar",
     "itemzoomer-1.1.0-1.21.1",
     "https://cdn.modrinth.com/data/GA4DHzBS/versions/vUWSQ7V8/cobbleemi-fabric-1.0.3-for-cobblemon-1.7.1.jar",
-    "mega_showdown-fabric-1.6.8+1.7.3+1.21.1"
 )
 
 $resourcePacks = @(
