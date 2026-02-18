@@ -72,16 +72,31 @@ $resourcePacksToRemove = @(
 # ── Helper Functions ────────────────────────────────────────────────────────
 function Get-DecodedFilename {
     param([string]$url)
-    $fileName = Split-Path $url -Leaf
+
+    # Get the last part after /
+    $leaf = Split-Path $url -Leaf
+
+    # If it has query parameters (?), take only up to the first ?
+    if ($leaf -match '\?') {
+        $leaf = $leaf.Split('?')[0]
+    }
+
+    # Decode any %xx escapes (though Dropbox usually doesn't need it here)
     try {
         if ([Type]::GetType("System.Web.HttpUtility")) {
-            return [System.Web.HttpUtility]::UrlDecode($fileName)
+            $leaf = [System.Web.HttpUtility]::UrlDecode($leaf)
         }
     }
-    catch {}
-    # Fallback
-    Write-Host "URL decoding not available or failed → using raw name: $fileName" -ForegroundColor Yellow
-    return $fileName
+    catch {
+        Write-Host "URL decoding failed → using raw: $leaf" -ForegroundColor Yellow
+    }
+
+    # Fallback: if still empty or weird, use a safe name
+    if ([string]::IsNullOrWhiteSpace($leaf)) {
+        $leaf = "downloaded_mod.jar"
+    }
+
+    return $leaf
 }
 
 function Download-File {
