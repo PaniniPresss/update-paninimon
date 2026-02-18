@@ -44,7 +44,8 @@ $mods = @(
     "https://cdn.modrinth.com/data/i3XVG2gn/versions/A8T1V7uo/cobbleworkers-fabric-1.8.0%2B1.7.0.jar",
     "https://cdn.modrinth.com/data/XP2jcAo0/versions/MYJtblOM/pastureLoot-1.0.5%2B1.21.1.jar",
     "https://cdn.modrinth.com/data/t1VgucWo/versions/gC8IvJwh/chunkloaders-1.2.9-fabric-mc1.21.1.jar",
-    "https://cdn.modrinth.com/data/qekxLrOP/versions/CCXkMoGs/cobbledex-rei-emi-jei-fabric-1.28.0.jar"
+    "https://cdn.modrinth.com/data/qekxLrOP/versions/CCXkMoGs/cobbledex-rei-emi-jei-fabric-1.28.0.jar",
+    "https://www.dropbox.com/scl/fi/mwmugduiqqkgm3x3eh85m/nirvana-fabric-2.0.7.jar?rlkey=e1mwi7t6zmzcceugyt86fdkad&st=6du60473&dl=1"
     # Add more mod URLs here
 )
 
